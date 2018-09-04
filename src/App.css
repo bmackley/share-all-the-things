@@ -1,0 +1,22 @@
+.App{
+  color: white;
+}
+
+#app-container{
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  grid-template rows: 1fr;
+}
+
+#app-menu-container{
+  grid-row-start: 1;
+  grid-row-end: 5;
+  height: calc(100vh - 60px);
+  background-color: #E9E9E9;
+}
+
+#app-content-container{
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-color: #CDCDCD;
+}
