@@ -21,10 +21,10 @@ class Signup extends Component {
   }
   handleSignupSubmit(event){
     event.preventDefault();
-    // window.localStorage.setItem("name", this.state.name)
-    // console.log(localStorage.getItem("name"));
+    window.localStorage.setItem("name", this.state.name)
+    console.log(localStorage.getItem("name"));
     window.location = "/"
-    this.props.onSubmitSignup(this.state.name);
+    // this.props.onSubmitSignup(this.state.name);
   }
   render() {
     return(
@@ -34,6 +34,11 @@ class Signup extends Component {
         <div className="signup-input"><input type="email" placeholder="email" onChange={this.handleEmailChange} name="email"></input></div>
         <div className="signup-input"> <input type="password" placeholder="password" onChange={this.handlePasswordChange} name="password"></input></div>
         <button className="button-big" id="submitButton" onClick={this.handleSignupSubmit}>Submit</button>
+        <div id="col-yellow">
+        <h1>Title</h1>
+          Here is some content. here is some content. Here is some content.
+          Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content. Here is some content. here is some content. Here is some content.
+        </div>
       </form>
     );
   }

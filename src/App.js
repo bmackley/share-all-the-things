@@ -19,13 +19,11 @@ class App extends Component {
         <Navbar />
         <div id="app-container">
           <div id="app-menu-container">Menu goes here</div>
-          <Router onSubmitSignup={this.nameChange}/>
-
+          <Router/>
         </div>
         {/*
           <Signup onSubmitSignup={this.nameChange}/>
-          */
-        }
+        */}
       </div>
     );
   }

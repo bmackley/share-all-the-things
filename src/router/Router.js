@@ -10,6 +10,7 @@ class Router extends Component {
       <div id="router">
       <main>
         <Switch>
+          <Route path='/' component={Signup}/>
           <Route path='/signup' component={Signup}/>
         </Switch>
       </main>
